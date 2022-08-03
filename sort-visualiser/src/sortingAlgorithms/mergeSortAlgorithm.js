@@ -32,6 +32,8 @@ function doMerge(mainArray, startIdx, middleIdx, endIdx, auxiliaryArray, animati
             animations.push([k, auxiliaryArray[j]]);
             mainArray[k++] = auxiliaryArray[j++];
         }
+        // console.log("animations:", animations);
+            // console.log("array:",mainArray);
     }
     while(i <= middleIdx){
         animations.push([i,i]);
